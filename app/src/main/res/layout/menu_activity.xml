@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:menu="@menu/my_navigation_items" />
+
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="361dp"
+        android:layout_height="456dp"
+        android:text=""
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ListView
+        android:id="@+id/menuItems"
+        android:layout_width="367dp"
+        android:layout_height="458dp"
+        android:divider="@color/white"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-2dp"></ListView>
+
+
+</android.support.constraint.ConstraintLayout>
